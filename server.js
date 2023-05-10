@@ -1,6 +1,5 @@
-import { app } from "./app.js";
-import usersRouter from "./routes/users.js"
-import todoRouter from "./routes/todo.js"
+var app = require('./app.js')
+
 // var usersRouter = require('./routes/users');
 // var todoRouter = require('./routes/todo');
 app.get("/",(req, res)=>{
@@ -17,6 +16,3 @@ app.get("/",(req, res, next)=>{
 app.listen(process.env.PORT,()=>{
     console.log(`Sever is working on port ${process.env.PORT}`);
 })
-
-app.use('/users', usersRouter);
-app.use('/todo', todoRouter);
