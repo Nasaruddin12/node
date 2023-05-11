@@ -1,12 +1,12 @@
 {
   "name": "restapi",
   "version": "0.0.0",
-  
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.3.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.0.3",

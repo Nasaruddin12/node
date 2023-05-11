@@ -1,5 +1,5 @@
 
-var mysql = require('mysql');
+var mysql = require('@vercel/postgres');
 
 var connection = mysql.createConnection({
   host: 'localhost',
